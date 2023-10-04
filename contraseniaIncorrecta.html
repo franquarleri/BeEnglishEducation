@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/niveles.css">
+    <title>BE - ENGLISH EDUCATION</title>
+ <!--icons-->
+ <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+ 
+ <!--links-->
+ <link rel="shortcut icon" href="./images/bee.png" type="image/x-icon">
+ <link rel="stylesheet" href="./css/niveles.css">
+</head>
+<body>
+ <!--empieza nav-->
+ <header id="header">
+     <div class="container__header">
+         <div class="logo">
+             <a href="./index.html"><img src="/images/EEA-Logo.png" alt=""></a>
+         </div>
+         <div class="container__nav">
+             <nav id="nav">
+                 <ul>
+                     <button id="open">Contacto</button>
+                 </ul>    
+             </nav>
+         </div>
+     </div>
+ </header>
+ <!--termina nav-->
+ 
+ <!--info descargable-->
+ <div class="container__background-triangle">
+     <div class="triangle triangle1"></div>
+     <div class="triangle triangle2"></div>
+     <div class="triangle triangle3"></div>
+ </div>
+
+ <div class="container__cards">
+    <div class="card">
+        <div class="cover__card">
+            <img src="images/nv1.jpg" alt="">
+        </div>
+        <h2>Contraseña incorrecta.</h2>
+        <hr>
+        <div class="footer__card">
+        </div>
+    </div>
+    <a href="./index.html"> <input type="submit" value="Salir" class="salir"></a>
+</div>
+ <!--termina info descargable-->
+
+ <!--empieza btn whatsapp-->
+<div>
+ <a href="https://api.whatsapp.com/send?phone=+5493512220306" class="btn-wsp" target="_blank">
+     <i class="fa-brands fa-whatsapp"></i>
+ </a>
+</div>
+<!--termina btn whatsapp-->
+
+<!--Empieza contacto-->
+
+<div id="modal_container" class="modal-container">
+ <!-- Form-->
+ <form class="form" action="form.php" method="POST" >
+     <div class="close-modal" data-bs-dismiss="modal" id="close"></div>
+     <div class="form_container">
+         <div class="form_group">
+             <input id="name" type="text" name="nombre" class="form_input" required placeholder=" ">
+             <label for="name" class="form_label">Nombre:</label>
+             <span class="form_line"></span>
+         </div>
+         <div class="form_group">
+             <input id="email" type="email" name="Email" class="form_input" required placeholder=" ">
+             <label for="email" class="form_label">Email:</label>
+             <span class="form_line"></span>
+         </div>
+         <div class="form_group">
+             <input id="Tel" type="text" name="telefono" class="form_input" required placeholder=" ">
+             <label for="Tel" class="form_label">Celular:</label>
+             <span class="form_line"></span>
+         </div>
+         <div class="form_group">
+             <textarea name="mensaje" id="mensajes" cols="20" rows="5" required placeholder=" " class="form_input"></textarea>
+             <label for="mensajes" class="form_label">Escribe tu consulta</label>
+             <span class="form_line"></span>
+         </div>
+             <input type="submit" class="form_submit" value="Enviar">
+     </div>
+ </form>
+</div>
+</div>
+<!--Termina contacto-->
+
+ <script src="./js/menu.js"></script>
+ <script src="./js/contacto.js"></script>
+</body>
+</html>
